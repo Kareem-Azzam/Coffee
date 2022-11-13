@@ -76,6 +76,7 @@
      .navbar .logo{
         font-size: 1.5rem;
         font-weight: 600;
+        margin-left: 0;
     }
      .navbar .logo img{
         width: 22px;
