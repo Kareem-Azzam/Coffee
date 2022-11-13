@@ -1,0 +1,1568 @@
+@media only screen and (max-width: 700px) {
+
+    
+    html
+    {
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    .divall
+    {   
+    width: 100%;
+    margin: 0 0 0 0;
+    }
+    
+    .ToUp
+    {
+        position: fixed;
+        z-index: 5;
+        bottom: 10%;
+        right: -20%;
+        color:white;
+        font-size: 2rem;
+        transition: 0.8s;
+        background-color:#f10b67;
+        width:50px;
+        height:50px;
+        text-align:center;
+        border-radius:10px;
+        z-index: 2;
+        box-shadow: 0px 2px 4px 1px #777;    
+    }
+    .ToUp:hover
+    {
+        
+        color:white;
+        font-size: 2rem;
+        transition: 0.8s;
+        background-color:#f10b67;
+        border-radius:10px;
+        box-shadow: 1px 2px 4px 2px rgb(173, 173, 173);
+        padding:0;
+    }
+    .show
+    {
+        right: 1%;
+    }
+    
+    .ss{
+        background-color: white;
+        -webkit-box-shadow: 0 8px 6px -6px #777;
+        -moz-box-shadow: 0 8px 6px -6px #777;
+        box-shadow: 0 8px 12px -6px #777;
+        color: black;
+    }
+
+    
+    /****** start navbar ******/
+     .navbar{
+        position:fixed;
+        top:0;
+        z-index: 200;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 70px;
+        padding: 0 5%;
+    }
+     .navbar .logo{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+     .navbar .logo img{
+        width: 22px;
+        height: 22px;
+        padding: 0;
+    }
+    .shoping
+    {
+        font-size: 1.3rem;
+        color:#D17721;
+        position:relative;
+        left:auto;
+    }
+    .menu{
+        display: block;
+        font-size: 1.5rem;
+    }
+     .navbar ul .colsemenu{
+        display: block;
+        font-size: 1.6rem;
+        position: absolute;
+        right: 5.5%;
+        top:2.5%;
+        color: white;
+    }
+     .navbar ul .logo{
+        display: block;
+        padding: 10px 0;
+        font-size: 1.5rem;
+        position: absolute;
+        width: 100%;
+        bottom: 15%;
+        left: 0;
+        margin-left: 0;
+        background-color:#f10b67;
+        color: white;
+    }
+    #check{display: none;}
+    #check2{display: none;}
+
+     .navbar ul{
+        display: block;
+        position: absolute;
+        top:0;
+        left: -100%;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding-top: 60px;
+        background-color: #1b0431;
+        margin-top: 0;
+    }
+     .navbar ul li{
+        margin-top: 0%;
+        margin-left: none;
+        padding: 25px;
+        /*border-bottom: 1px solid #777;*/
+    }
+     .navbar ul li a{
+        padding: 0 5px;
+        text-decoration: none;
+        color : rgb(172, 172, 172);
+        font-size: 0.9rem;
+    }
+     .navbar ul li a:hover{
+        color : #f10b67;
+        border-bottom: 2px solid #f10b67;
+        text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+    }
+    .active{
+        color : #f10b67;
+        border-bottom: 2px solid #f10b67;
+        text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+    }
+    
+    .navbar .OurCollection .UlOurCollection
+{
+    position: static;
+    top:auto;
+    display: none;
+    height: auto;
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+    background-color: #1b0431;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+ /*.navbar .OurCollection:hover .UlOurCollection
+{
+    display: block;
+}*/
+ .navbar .OurCollection .UlOurCollection li
+{
+    margin-top:0;
+    padding: 0;
+    padding: 15px 5px;
+}
+ .navbar .OurCollection .UlOurCollection li:first-child
+{
+   border-bottom: 1px solid rgb(173, 173, 173);
+}
+ .navbar .OurCollection .UlOurCollection li a{
+    padding: 0 5px;
+    text-decoration: none;
+    color : white;
+    font-size: 0.9rem;
+}
+ .navbar .OurCollection .UlOurCollection li a:hover{
+    color : #f10b67;
+    border-bottom: 2px solid #f10b67;
+    text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+}
+    /****** end navbar ******/
+
+
+
+    /****** start slider ******/
+    .slider
+    {
+        margin-top: 0;
+        width: 100%;
+        height: 600px;
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .slides
+    {
+        width: 500%;
+        height: 600px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slides .infohmage{
+        content: "";
+        position: absolute;
+        top: 105px;
+        left: 0;
+        width: 100%;
+        height: 65vh;
+        color:white;
+        text-align: center;
+    }
+    .slides .infohmage h2{
+        /*font-size: 4rem;*/
+        font-size: 2.8rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color : rgb(221, 221, 221);  
+        margin: 0;
+    }
+    .slides .infohmage p{
+        font-size: 1rem;
+        line-height: 27px;
+        width: 95%;
+        color : rgb(196, 195, 195);  
+        margin: 5% 2.5% 10% 2.5%;
+    }
+    .slides .infohmage a{
+        text-decoration: none;
+        color:white;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 15px 35px;
+        background-color:  #D17721;
+        border-radius: 5px;
+        text-align: justify;
+        letter-spacing: 2px;  
+    }
+    .slides .infohmage a:hover{
+        text-decoration: none;
+        color:white;
+        font-weight: 700;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        padding: 15px 35px;
+        background-color: #ac631e;
+        border-radius: 5px;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .slide{
+        width: 20%;
+        transition: 3s;
+    }
+    .img1{
+        border-radius: 0;
+        object-fit: cover;
+        background-image: url("img/coffee6.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.6), rgba(7, 36, 37, 0.6)),
+        url('img/coffee6.jpg');
+    }
+    .img2{
+        border-radius: 0;
+        object-fit: cover;
+        background-image: url("img/coffee2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.6), rgba(7, 36, 37, 0.6)),
+        url('img/coffee2.jpg');
+    }
+    .img3{
+        border-radius: 0;
+        object-fit: cover;
+        background-image: url("img/coffee3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.6), rgba(7, 36, 37, 0.6)),
+        url('img/coffee3.jpg');
+    }
+    .img4{
+        border-radius: 0;
+        object-fit: cover;
+        background-image: url("img/coffee4.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.6), rgba(7, 36, 37, 0.6)),
+        url('img/coffee4.jpg');
+    }
+    .navigation-manual
+    {
+        position: absolute;
+        left: 50%;
+        top: 460px;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn
+    {
+        border:none;
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual-btn:not(:last-child)
+    { 
+        margin-right: 40px;
+    }
+    .manual-btn:hover
+    {
+        background: #D17721;
+    }
+    #radio1:checked ~ .first
+    {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first
+    {
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first
+    {
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first
+    {
+        margin-left: -60%;
+    }
+    .navigation-auto{
+        position: absolute;
+        left: 50%;
+        top: 460px;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }   
+    .navigation-auto div{
+        border:none;
+        padding: 6px;
+        border-radius: 10px;
+        transition: 1s;
+        background-color: white;
+    }   
+    .navigation-auto div:not(:last-child)
+    {
+        margin-right: 40px;
+    }
+    #radio1:checked ~ .navigation-auto .auto-btn1
+    {
+        background:  #D17721;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2
+    {
+        background:  #D17721;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3
+    {
+        background:  #D17721;
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4 
+    {
+        background:  #D17721;
+    }
+    /****** end slider ******/
+
+
+    .MainMittel
+    {
+        height: 450px;
+    }
+    .MainMittel .mittel{
+        width: 80%;
+        margin: 0 10%;
+        height: auto;
+        /*background-color: #37FF87;*/
+        background-color:white;
+        position: absolute;
+        top: 490px;
+        padding: 2.5% 0;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        /*-webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 15px -6px #777;*/
+        box-shadow: 0px 2px 9px 1px #777;
+
+    }
+    .MainMittel .mittel .img1
+    {
+        width: 90%;
+        height: 150px;
+        margin: 5%;
+        border-radius: 0;
+        background-image: url("img/coffee2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+        url('img/coffee2.jpg');
+        position: relative;
+    
+    }
+    .MainMittel .mittel .img1::before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 17%;
+        height: 42PX;
+        background-color: #e24f0a;
+        border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+    }
+    .MainMittel .mittel .img1 span
+    {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color:white;
+        position: absolute;
+        left: 2%;
+        top: 7%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .MainMittel .mittel .img1 h2
+    {
+        font-size: 1.3rem;
+        color:white;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .MainMittel .mittel .img1 p
+    {
+        font-size: 2rem;
+        color:rgb(226, 226, 226);
+        position: absolute;
+        left: 26%;
+        top: 33%;
+        font-weight: 100;
+        font-family: 'Satisfy', cursive;
+    }
+    .MainMittel .mittel .img2
+    {
+        width: 90%;
+        height: 150px;
+        margin: 5%;
+        border-radius: 0;
+        background-image: url("img/coffee3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+        url('img/coffee3.jpg');
+        position: relative;
+    
+    }
+    .MainMittel .mittel .img2::before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 17%;
+        height: 42PX;
+        background-color: #e24f0a;
+        border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+    }
+    .MainMittel .mittel .img2 span
+    {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color:white;
+        position: absolute;
+        left: 2%;
+        top: 7%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .MainMittel .mittel .img2 h2
+    {
+        font-size: 1.3rem;
+        color:white;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .MainMittel .mittel .img2 p
+    {
+        font-size: 2rem;
+        color:rgb(226, 226, 226);
+        position: absolute;
+        left: 26%;
+        top: 33%;
+        font-weight: 100;
+        font-family: 'Satisfy', cursive;
+    }
+    .MainMittel .mittel .img3
+    {
+        width: 90%;
+        height: 150px;
+        margin: 5%;
+        border-radius: 0;
+        background-image: url("img/coffee4.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*filter: brightness(50%);*/
+        background-image: 
+        linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+        url('img/coffee4.jpg');
+        position: relative;
+    
+    }
+    .MainMittel .mittel .img3::before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 17%;
+        height: 42PX;
+        background-color: #e24f0a;
+        border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+    }
+    .MainMittel .mittel .img3 span
+    {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color:white;
+        position: absolute;
+        left: 2%;
+        top: 7%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .MainMittel .mittel .img3 h2
+    {
+        font-size: 1.3rem;
+        color:white;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .MainMittel .mittel .img3 p
+    {
+        font-size: 2rem;
+        color:rgb(226, 226, 226);
+        position: absolute;
+        left: 26%;
+        top: 33%;
+        font-weight: 100;
+        font-family: 'Satisfy', cursive;
+    }
+
+   
+    .AboutUs
+    {
+        height: auto;
+        width: 95%;
+        margin: 5% 2.5% 0 2.5%;
+        overflow: hidden;
+        padding-top: 9.2%;
+        color: black;
+    }
+    .AboutUs h1
+    {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .AboutUs .AllInfoAboutUs
+    {
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .AboutUs .AllInfoAboutUs .divleft
+    {
+        width: 100%;
+        height: 380px;
+        padding: 0 0 5% 0;
+    }
+    .AboutUs .AllInfoAboutUs .divleft::before
+    {
+        content: ' ';
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+        border-top: 400px solid #d17621c4;
+        border-right: 95vw solid transparent;
+        width: 0;
+        position: absolute;
+    }
+    .AboutUs .AllInfoAboutUs .divleft h3
+    {
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+        color : white; 
+        font-weight: 500; 
+        margin-left: 2%;
+    }
+    .AboutUs .AllInfoAboutUs .divleft h2
+    {
+        margin-top: 2%;
+        font-size: 1.1rem;
+        font-weight: 600; 
+        text-align:center;
+    }
+    .AboutUs .AllInfoAboutUs .divleft p
+    {
+        font-size: 0.9rem;
+        color : black; 
+        font-weight: 400; 
+        letter-spacing: 1px;
+        margin-top: 10%;
+        margin-left: 2%;
+    } 
+    .AboutUs .AllInfoAboutUs .divleft button
+    {
+    width: 40%;
+    height: 45px;
+    margin: 2% 0%;
+    font-size: 1rem;
+    font-weight: 500;
+    border:none;
+    background-color: white;
+    border: 1px solid #D17721;
+    border-radius: 5px;
+    color: #D17721;
+    letter-spacing: 2px;
+    margin-left: 5%;
+    }
+    .AboutUs .AllInfoAboutUs .divleft button:hover
+    {
+    width: 40%;
+    height: 45px;
+    margin: 3% 0%;
+    font-size: 1rem;
+    font-weight: 500;
+    border:none;
+    background-color: #D17721;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s ease-in-out;
+    letter-spacing: 2px;
+    margin-left: 5%;
+    }
+    .AboutUs .AllInfoAboutUs .divright
+    {
+        width: 100%;
+        margin-top: 0%; /*15*/
+    }
+    .AboutUs .AllInfoAboutUs .divright img
+    {
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .crcile1{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        border: 15px solid #d1762133;
+        position: absolute;
+        left: 0%;
+        top:3.5%;
+        z-index: -1;
+    }
+    .crcile2{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+        border: 15px solid #d1762133;
+        position: absolute;
+        right: -8%;
+        top:35%;
+        z-index: -1;
+    }
+    .crcile3{
+        width: 40px;
+        height: 40px;
+        background-color: none;
+        border-radius: 50%;
+        border: 20px solid #d1762133;
+        position: absolute;
+        right:auto;
+        left: -8%;
+        top:110%;
+        transition: translate(-50%,-50%);
+        z-index: 1;
+    }
+    .crcile4{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        border: 20px solid #d1762133;
+        position: absolute;
+        left: -22%;
+        top:66%;
+        transition: translate(-50%,-50%);
+        z-index: -1;
+    }
+    .crcile5{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        border: 20px solid #d1762133;
+        position: absolute;
+        left: auto;
+        right: -7%;
+        top:99%;
+        transition: translate(-50%,-50%);
+        z-index: -1;
+    }
+    .crcile6{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        border: 20px solid #d1762133;
+        position: absolute;
+        left: -25%;
+        top:40%;
+        transition: translate(-50%,-50%);
+        z-index: -1;
+    }
+    .crcile7{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        border: 15px solid #d1762133;
+        position: absolute;
+        left:-10%;
+        top:20%;
+        transition: translate(-50%,-50%);
+        z-index: -1;
+    }
+    .crcile8{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        border: 15px solid #d1762133;
+        position: absolute;
+        right: -7%;
+        top: 60%;
+        transition: translate(-50%,-50%);
+        z-index: -1;
+    }
+        
+    
+
+    /**************Start Our Collection**************/
+.MostRequested
+{
+    height: auto;
+    width: 85%;
+    margin: 7.5%;
+    position: relative;
+    padding-top: 9.2%;
+    color: black;
+}
+.MostRequested h1
+{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+.MostRequested .products
+{
+    width: 100%;
+    display: block;
+    justify-content: space-around; 
+    align-items: center;
+    /*box-shadow: 0px 2px 9px 1px #777;*/
+}
+/*first product*/
+.MostRequested .products .product{
+    width: 100%;
+    margin-top: 10%;
+    height: 360px;
+    background-image: url("img/coffee3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee3.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+}
+.MostRequested .products .product .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 70%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+/*target*/
+.MostRequested .products .product:target{
+    background-size:680px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.507), rgba(7, 36, 37, 0.473)),
+    url('img/coffee3.jpg');
+}
+.MostRequested .products .product:target .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product:target .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 2.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product:target .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 1rem;
+    transition: all 0.9s ease;
+    color: rgb(202, 201, 201);
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product:target .probtn{
+    width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product:target .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+}
+.MostRequested .products .product:target .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/* end first products*/
+
+
+/*sec product*/
+.MostRequested .products .product1{
+    width: 100%;
+    margin-top: 10%;
+    height: 360px;
+    background-image: url("img/coffee4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee4.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+
+}
+.MostRequested .products .product1 .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product1 .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product1 .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 70%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1 .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1 .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product1 .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product1 .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product1 .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+/*target*/
+.MostRequested .products .product1:target{
+    background-size:600px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.507), rgba(7, 36, 37, 0.473)),
+    url('img/coffee4.jpg');
+}
+.MostRequested .products .product1:target .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product1:target .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 2.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product1:target .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 1rem;
+    transition: all 1s;
+    color: rgb(202, 201, 201);
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1:target .probtn{
+    width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1:target .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+}
+.MostRequested .products .product1:target .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/*end sec products*/
+
+
+/*3 product*/
+.MostRequested .products .product2{
+    width: 100%;
+    margin-top: 10%;
+    height: 360px;
+    background-image: url("img/coffee2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee2.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+
+}
+.MostRequested .products .product2 .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product2 .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product2 .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 70%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2 .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2 .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product2 .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product2 .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product2 .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+/*target*/
+.MostRequested .products .product2:target{
+    background-size:620px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.507), rgba(7, 36, 37, 0.473)),
+    url('img/coffee2.jpg');
+}
+.MostRequested .products .product2:target .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product2:target .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 2.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product2:target .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 1rem;
+    transition: all 1s;
+    color: rgb(202, 201, 201);
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2:target .probtn{
+    width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2:target .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+}
+.MostRequested .products .product2:target .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/*end 3 products*/
+/**************End Our Collection**************/
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* width */
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+  }
+  
+  /* Track */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-track {
+    background: antiquewhite; 
+  }
+   
+  /* Handle */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-thumb {
+    background: rgb(250, 202, 139); 
+  }
+  
+  /* Handle on hover */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 66, 66); 
+  }
+
+.proHotDrink{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.829);
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transform: translate(0,0);
+    z-index: 201;
+}
+.proHotDrink .mainproHotdrink{
+    width: 95%;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    background-image: url("img/hotdrink2.jpg");
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.466), rgba(7, 36, 37, 0.459)),
+    url('img/hotdrink2.jpg');
+}
+.proHotDrink .img0{
+    position: absolute;
+    left: 50%;
+    top: -9.2%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    
+}
+.proHotDrink .mainproHotdrink #check8{
+    position: absolute;
+    right: 5%;
+    top:5%;
+}
+.proHotDrink .mainproHotdrink .divmainpro{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-color: #e9e9e9b4;
+    overflow:scroll;
+}
+.proHotDrink .mainproHotdrink h2{
+    text-align: center;
+    color: rgb(230, 228, 228);
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro{
+    background-color: white;
+    min-width: 310px;
+    height: 260px;
+    display: flex;
+    border-radius: 10px;
+    margin: 0 3%;
+    overflow:hidden;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .divl{
+   background-color: antiquewhite;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 48%;
+   position:relative;
+    z-index:1;
+   border-radius: 10px 400px 400px 10px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .divr{
+    text-align: center;
+    width: 55%;
+ }
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .imgpro{
+    width: 100%;
+    height: 120px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .infopro{
+   font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+    text-align: left;
+    position:relative;
+    left:-17%;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro{
+    color: #777;
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 0.9rem;
+    overflow-y: scroll;
+    height: 90px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .pricepro{
+    font-size: 1rem;
+    font-weight: 500;
+    color:white;
+    background-color: #ca065431;
+    width: 115%;
+    margin: 5px 0 5px 0;
+    color:#ca0655;
+    padding : 5px 0;
+    position:relative;
+    left:-13%;
+    z-index:0;
+    
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .btnpro{
+    width: 130px;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #06eb3ff8;
+    border:none;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    margin: 10px 0 1px 0 ;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .btnpro:hover{
+    width: 130px;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #05c435f8;
+    border:none;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+}
+
+#checkMenuHotDrink{display: none;}
+#checkMenuHotDrinkColse{display: none;}
+.proHotDrink .mainproHotdrink .checkMenuHotDrinkColse2{
+    display: block;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 5.5%;
+    top:3%;
+    color:white;
+}
+
+/**************Start Our Menu**************/
+.OurMenu
+{
+    height: 90vh;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    padding-top: 9.2%;
+    color: black;
+}
+.OurMenu h1
+{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+.OurMenu .maindiv
+{
+    display: block;
+    background-color: rgb(243, 243, 243);
+    box-shadow: none;
+    padding: 5px 0;
+}
+/*start div left*/
+.OurMenu .maindiv .divleft
+{
+    width: 100%;
+    height: auto;
+    text-align: none;
+    border-right: none;
+}
+.OurMenu .maindiv .divleft h2
+{
+    background-color: #a1dd1638;
+    width: 20%;
+    margin: 5% 35%;
+    padding: 15px 20px;
+    color:#ac631e;
+    border-radius: 150px 0 150px 0;
+}
+.OurMenu .maindiv .divleft label
+{
+    display: block;
+    text-align: center;
+    background-color: #cecece;
+    width: 90%;
+    height: 40px;
+    margin: 5%;
+    position: relative;
+}
+.OurMenu .maindiv .divleft label span
+{
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top:0%;
+    width: 95%;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.OurMenu .maindiv .divleft label span:hover
+{
+    color:white;
+}
+.OurMenu .maindiv .divleft label::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 4%;
+   height: 40px;
+   background-color: #ca0655;
+   z-index: 0;
+   color: white;
+}
+.OurMenu .maindiv .divleft label:hover::before
+{
+    width: 100%;
+    transition: width .4s;
+}
+/*end div left*/
+
+/*start div right*/
+.OurMenu .maindiv .divright
+{
+    width: 100%;
+    height: auto;
+    text-align: none;
+    margin-top: 15%;
+}
+.OurMenu .maindiv .divright h2
+{
+    background-color: #a1dd1638;
+    width: 20%;
+    margin: 5% 35%;
+    padding: 15px 20px;
+    color:#ac631e;
+    border-radius: 150px 0 150px 0;
+}
+.OurMenu .maindiv .divright label
+{
+    display: block;
+    text-align: center;
+    background-color: #cecece;
+    width: 90%;
+    height: 40px;
+    margin: 5%;
+    position: relative;
+}
+.OurMenu .maindiv .divright label span
+{
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top:0%;
+    width: 95%;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.OurMenu .maindiv .divright label span:hover
+{
+    color:white;
+}
+.OurMenu .maindiv .divright label::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 4%;
+   height: 40px;
+   background-color: #ca0655;
+   z-index: 0;
+   color: white;
+}
+.OurMenu .maindiv .divright label:hover::before
+{
+    width: 100%;
+    transition: width .4s;
+}
+/*end div right*/
+/**************End Our Menu**************/
+
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
+    <title>coffeeroasters</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+   
+</head>
+<body>
+     
+        <section class="navbar">
+            <label class = "logo"><img src = "img/logo.png">CoffeeRoasters</label>
+            <label class = "shoping"><i class="fa fa-shopping-cart"></i></label>
+            <ul id = "ull">
+                <input type="checkbox" id="check2" onclick="checkkclo()">
+                <label for = "check2" class = "colsemenu"><i class="fa fa-close"></i></label>
+
+                <li><a class = "active" href = "index.html">HOME</a></li>
+                <li><a href = "#AboutUs">ABOUT US</a></li>
+                <li class = "OurCollection" onclick="clickOurCollection()" onmouseleave="clickOurCollectionclose()"><a>OUR COLLECTION <i class='fas fa-angle-down'></i></a>
+                    <ul class = "UlOurCollection" id = "UlOurCollection" onmouseleave="clickOurCollectionclose()">
+                        <li><a href = "#MostRequested">MOST REQUESTED</a></li>
+                        <li><a href = "#OurMenu">OUR MENU</a></li>
+                    </ul>  
+                </li>
+                <li><a href = "#">CONTACT</a></li>
+                <li><a href = "#">CREATE YOUR PLAN</a></li>
+
+                <label class = "logo"><img src = "img/logo.png">CoffeeRoasters</label>
+            </ul>
+
+            <input type="checkbox" id="check" onclick="checkk()">
+            <label for = "check" class = "menu"><i class="fa fa-bars menu"></i></label>
+        </section>
+
+        <main class="divall">
+
+            <span class = "ToUp"><i class='fas fa-angle-double-up'></i></span>
+
+            
+        <section class="slider" id = "slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="infohmage">
+                    <h2>Great <span class = "colf">coffee</span> made simple.</h2>
+                    <p>Start your morning with the world best coffee. Try our expertly curated artisan coffees from our 
+                        best roasters delivered directly to your door, at your schedule.
+                    </p>
+                    <a href="#">Create your plan</a>
+                </div>
+
+                <div class="slide img1 first">
+                    <!--<img src = "../aa.webp">-->
+                </div>
+                <div class="slide img2">
+                    <!--<img src = "../bb.webp">-->
+                </div> 
+                <div class="slide img3">
+                    <!--<img src = "../cc.webp">-->
+                </div> 
+                <div class="slide img4">
+                    <!--<img src = "../ee.webp">-->
+                </div> 
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div> 
+            </div>
+            
+            <div class="navigation-manual">
+                <label for="radio1" class = "manual-btn"></label>
+                <label for="radio2" class = "manual-btn"></label>
+                <label for="radio3" class = "manual-btn"></label>
+                <label for="radio4" class = "manual-btn"></label>
+            </div>
+        </section>
+
+        <section class = "MainMittel">
+            <div class="mittel">
+                
+                <div class = "img1">
+                    <span>New</span>
+                    <h2>Coffe</h2>
+                    <p>Macchiato</p>
+                </div>
+                <div class = "img2">
+                    <span>New</span>
+                    <h2>Coffe</h2>
+                    <p>Macchiato</p>
+                </div>
+                <div class = "img3">
+                    <span>New</span>
+                    <h2>Coffe</h2>
+                    <p>Macchiato</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+        <section class="AboutUs" id = "AboutUs">
+
+            <h1>About <span class = "colf">US</span></h1>
+            <div class="AllInfoAboutUs">
+                <div class="divleft">
+                    <h3>Our Skills</h3>
+                    <h2>We make the delicious coffee for the coffee levers</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button type="submit">Know More</button>
+                </div>
+                <div class="divright">
+                    <img src="img/coffee6.jpg" alt="aa">
+                </div>
+            </div>
+        </section>
+
+
+    
+         <section class="MostRequested" id = "MostRequested">
+
+            <div class="crcile1"></div>
+            <div class="crcile2"></div>
+            <div class="crcile3"></div>
+            <div class="crcile4"></div>
+            <div class="crcile5"></div>
+            <div class="crcile6"></div>
+            <div class="crcile7"></div>
+            <div class="crcile8"></div>
+        
+            <h1>Most<span class = "colf"> Requested</span></h1>
+        <div class="products">
+            <div class="product">
+                <label class = "productName1">Coffe</label>
+                <label class = "productName2">Macchiato</label>
+                <label class = "proinfo">Light and flavorful blend with cocoa and black pepper for 
+                    an intense experience</label>
+                <button class = "probtn" type="submit">Order Now</button>
+                <div class="infoleft">
+                    <div><i class="fa fa-heart"></i></div>
+                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-info-circle"></i></div>
+                </div>
+            </div>
+            <div class="product1">
+                <label class = "productName1">Cake</label>
+                <label class = "productName2">Macchiato</label>
+                <label class = "proinfo">Light and flavorful blend with cocoa and black pepper for 
+                    an intense experience</label>
+                <button class = "probtn" type="submit">Order Now</button>
+                <div class="infoleft">
+                    <div><i class="fa fa-heart"></i></div>
+                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-info-circle"></i></div>
+                </div>
+            </div>
+            <div class="product2">
+                <label class = "productName1">Cake</label>
+                <label class = "productName2">Macchiato</label>
+                <label class = "proinfo">Light and flavorful blend with cocoa and black pepper for 
+                    an intense experience</label>
+                <button class = "probtn" type="submit">Order Now</button>
+                <div class="infoleft">
+                    <div><i class="fa fa-heart"></i></div>
+                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-info-circle"></i></div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+      <section class = "proHotDrink" id = "proHotDrink">
+            <div class="mainproHotdrink">
+                <img class = "img0" src="img/person-blue-shirt.png" alt="">
+                <h2>Hot Drink</h2>
+                <input type="checkbox" name="checkMenuHotDrinkColse" id="checkMenuHotDrinkColse" onclick="checkMenuHotDrinkColse()">
+                <label for = "checkMenuHotDrinkColse" class = "checkMenuHotDrinkColse2"><i class="fa fa-close"></i></label>
+                    <div class = "divmainpro">         
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c2.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Whipped Milk</li>
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                                
+                        </div> 
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c3.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>
+
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c1.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk & Caffe & Espresso</li>
+                                    <li>Espresso</li> 
+                                    <li>Milk & Caffe & Espresso</li>
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>    
+
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c2.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Milk & Caffe & Espresso</li>
+                                    <li>Milk & Caffe & Espresso</li>
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>    
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c3.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Milk & Caffe & Espresso</li>
+                                    <li>Milk & Caffe & Espresso</li>
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                    <li>Milk & Caffe & Espresso</li>
+                                    <li>Milk & Caffe & Espresso</li>
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>    
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c1.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>    
+                        <div class="cardpro">
+                            <div class = "divl">
+                                <img class = "imgpro"  src="img//c2.png" alt="aa">
+                            </div>
+                            <div class = "divr">
+                                <p class = "infopro">Espresso</p>
+                                <ul class = "frompro">
+                                    <li>Whipped Milk</li>
+                                    <li>Milk</li>
+                                    <li>Espresso</li> 
+                                </ul>
+                                <p class = "pricepro">50$</p>
+                                <button class = "btnpro" type="submit">Order Now</button>
+                            </div>                            
+                        </div>                 
+                    </div>
+            </div>
+        </section>
+
+        <section class="OurMenu" id = "OurMenu">
+            <h1>Our <span class = "colf">Menu</span></h1>
+        <div class="maindiv">
+            <div class="divleft">
+                <h2>Drink</h2>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+            </div>
+            <div class="divright">
+                <h2>cakes</h2>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+                <div>
+                    <label for = "checkMenuHotDrink"><span><i class='fas fa-mug-hot'>&nbsp;</i> Hot Drink</span></label>
+                    <input type="checkbox" name="checkMenuHotDrink" id="checkMenuHotDrink" onclick="checkMenuHotDrink()">
+                </div>
+            </div>
+        </div>
+        </section>
+
+      </main>
+      
+      <!--<div class="loader-wrapper" id = "loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>-->
+      <script>
+      
+      /*$(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });*/
+
+        let span = document.querySelector(".ToUp");
+        let nav = document.querySelector(".navbar");
+        window.onscroll = function() {
+            if(this.scrollY >= 700){
+                span.classList.add("show");
+            }
+            if(this.scrollY <= 700){
+                span.classList.remove("show");
+            }
+            if(this.scrollY >= 90){
+                nav.classList.add("ss");
+            }
+            if(this.scrollY <= 90){
+                nav.classList.remove("ss");
+            }
+        };
+
+        span.onclick = function(){
+            window.scrollTo({
+                top:0,
+                behavior:"smooth",
+            });
+        };
+
+
+
+        /*let nav = document.querySelector(".navbar");
+        window.onscroll = function() {
+            if(this.scrollY >= 70){
+                nav.classList.add("ss");
+            }
+            else{
+                nav.classList.remove("ss");
+            }
+        };*/
+
+
+
+        var counter = 1;
+        setInterval(function()
+        {
+              document.getElementById('radio' + counter).checked=true;
+              counter++;
+              if(counter > 4)
+              {
+                  counter = 1;
+              }
+        }, 5000);
+
+       function checkk()
+        {
+            var check = document.getElementById("check").value;
+            var styleul = document.getElementById("ull");
+            if(check)
+            {
+                styleul.style.left = "0";
+            }    
+        }
+        function checkkclo()
+        {
+            var check2 = document.getElementById("check2").value;
+            var styleul = document.getElementById("ull");
+            var slider = document.getElementById("slider");
+            if(check2)
+            {
+                styleul.style.left = "-200%";
+                styleul.style.transition = "all .5s";
+                slider.style.filter = "none";
+            }     
+        }
+
+
+
+
+
+        function checkMenuHotDrink()
+        {
+            var check = document.getElementById("checkMenuHotDrink").value;
+            var styleul = document.getElementById("proHotDrink");
+            if(check)
+            {
+                
+                styleul.style.left = "0%";
+            }    
+        }
+
+
+        function checkMenuHotDrinkColse()
+        {
+            var check = document.getElementById("checkMenuHotDrinkColse").value;
+            var styleul = document.getElementById("proHotDrink");
+            if(check)
+            {
+                styleul.style.left = "-200%";
+                styleul.style.transition = "all 1s";
+            }     
+        }
+
+       /* const activePage = window.location.pathname;
+        const navLinks = document.querySelectorAll('.navbar a').forEach(link => {
+        if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            console.log(link);
+        }
+        })*/
+
+        function clickOurCollection(){
+            document.getElementById("UlOurCollection").style.display = "block";
+        }
+        function clickOurCollectionclose(){
+            document.getElementById("UlOurCollection").style.display = "none";
+        }
+    </script>
+      <script src="https://kit.fontawesome.com/5d2ad38953.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

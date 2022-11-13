@@ -1,0 +1,1566 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.colf{
+    color:#D17721;
+}
+.spann{
+    color: white;
+}
+
+ /*Upload website*/
+	 .loader-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #242f3f;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border: 4px solid #Fff;
+      animation: loader 2s infinite ease;
+    }
+    .loader-inner {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: #fff;
+      animation: loader-inner 2s infinite ease-in;
+    }
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+/* End Upload website*/
+
+.ToUp
+{
+    position: fixed;
+    z-index: 5;
+    bottom: 10%;
+    right: -20%;
+    color:white;
+    font-size: 2rem;
+    transition: 0.8s;
+    background-color:#f10b67;
+    width:50px;
+    height:50px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow: 0px 2px 4px 1px #777;    
+    text-align:center;
+}
+.ToUp:hover
+{
+    
+    color:white;
+    font-size: 2rem;
+    transition: 0.8s;
+    background-color:#f10b67;
+    border-radius:10px;
+    box-shadow: 1px 2px 4px 2px rgb(173, 173, 173);
+    padding:5px;
+}
+.show
+{
+    right: 2%;
+}
+.divall
+{   
+   width: 91%;
+   margin: 0 4.5%;
+}
+
+
+.ss{
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px #777;
+    -moz-box-shadow: 0 8px 6px -6px #777;
+    box-shadow: 0 8px 12px -6px #777;
+}
+
+
+/****** start navbar ******/
+ .navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0;
+    z-index: 200;
+}
+
+ .navbar .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 5%;
+}
+ .navbar .logo img{
+    width: 22px;
+    height: 22px;
+    padding: 0;
+}
+.shoping
+{
+    font-size: 1.3rem;
+    color : rgb(172, 172, 172);
+    position: relative;
+    left:15%;
+}
+.menu{
+    display: none;
+}
+ .navbar ul .colsemenu{
+    display: none;
+}
+ .navbar ul .logo{
+    display: none;
+}
+#check{display: none;}
+#check2{display: none;}
+
+ .navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: auto;
+    position: relative;
+    margin-right: 5%;
+}
+ .navbar ul li{
+    margin-top: none;
+    margin-left: 5px;
+}
+ .navbar ul #ulli1{
+    margin-top: none;
+}
+ .navbar ul li a{
+    padding: 0 5px;
+    text-decoration: none;
+    color : rgb(172, 172, 172);
+    font-size: 0.9rem;
+}
+ .navbar ul li a:hover{
+    color : #f10b67;
+    border-bottom: 2px solid #f10b67;
+    text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+}
+.active{
+    color : #f10b67;
+    border-bottom: 2px solid #f10b67;
+    text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+}
+
+ .navbar .OurCollection .UlOurCollection
+{
+    position: absolute;
+    top:25px;
+    display: none;
+    height: 100px;
+    background-color: white;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+ /*.navbar .OurCollection:hover .UlOurCollection
+{
+    display: block;
+}*/
+ .navbar .OurCollection .UlOurCollection li
+{
+    margin:0;
+    padding: 0;
+    padding: 15px 5px;
+}
+ .navbar .OurCollection .UlOurCollection li:first-child
+{
+   border-bottom: 1px solid rgb(173, 173, 173);
+}
+ .navbar .OurCollection .UlOurCollection li a{
+    padding: 0 5px;
+    text-decoration: none;
+    color : black;
+    font-size: 0.9rem;
+}
+ .navbar .OurCollection .UlOurCollection li a:hover{
+    color : #f10b67;
+    border-bottom: 2px solid #f10b67;
+    text-shadow: 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67 , 1px 2px 8px 2px #f10b67;
+}
+
+/****** end navbar ******/
+
+
+
+/****** start slider ******/
+.slider
+{
+    margin-top: 70px;
+    width: 100%;
+    height: 85vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides
+{
+    width: 500%;
+    height: 85vh;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slides .infohmage{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    width: min(50%, 500px);
+    height: min( 65vh , 400px);
+    color:white;
+}
+.slides .infohmage h2{
+    /*font-size: 4rem;*/
+    font-size: clamp(1.8rem, 7.5vw, 4rem);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color : rgb(221, 221, 221);  
+    margin: 0;
+}
+.slides .infohmage p{
+    font-size: 0.9rem;
+    line-height: 27px;
+    width: 75%;
+    color : rgb(196, 195, 195);  
+    margin: 5% 0 10% 0;
+}
+.slides .infohmage a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    padding: 15px 35px;
+    background-color: #D17721;
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 2px;  
+}
+.slides .infohmage a:hover{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    padding: 15px 35px;
+    background-color: #ac631e;
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.img1{
+    border-radius: 10px;
+    object-fit: cover;
+    background-image: url("img/coffee.cms");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.664), rgba(7, 36, 37, 0.664)),
+    url('img/coffee.cms');
+}
+.img2{
+    border-radius: 10px;
+    object-fit: cover;
+    background-image: url("img/coffee2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.664), rgba(7, 36, 37, 0.664)),
+    url('img/coffee2.jpg');
+}
+.img3{
+    border-radius: 10px;
+    object-fit: cover;
+    background-image: url("img/coffee3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.664), rgba(7, 36, 37, 0.664)),
+    url('img/coffee3.jpg');
+}
+.img4{
+    border-radius: 10px;
+    object-fit: cover;
+    background-image: url("img/coffee4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.664), rgba(7, 36, 37, 0.664)),
+    url('img/coffee4.jpg');
+}
+.navigation-manual
+{
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn
+{
+    border:none;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child)
+{ 
+    margin-right: 40px;
+}
+.manual-btn:hover
+{
+    background: #D17721;
+}
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+#radio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first
+{
+    margin-left: -60%;
+}
+.navigation-auto{
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}   
+.navigation-auto div{
+    border:none;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: white;
+}   
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background: #D17721;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background: #D17721;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background: #D17721;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 
+{
+    background: #D17721;
+}
+/****** end slider ******/
+
+
+.MainMittel .mittel{
+    width: 70%;
+    height: 200px;
+    /*background-color: #37FF87;*/
+    background-color:white;
+    position: absolute;
+    top: 81%;
+    margin: 0 11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 15px -6px #777;
+}
+.MainMittel .mittel .img1
+{
+    width: 30%;
+    height: 170px;
+    border-radius: 0;
+    background-image: url("img/coffee2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+    url('img/coffee2.jpg');
+    position: relative;
+
+}
+.MainMittel .mittel .img1::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17%;
+    height: 42PX;
+    background-color: #e24f0a;
+    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+}
+.MainMittel .mittel .img1 span
+{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:white;
+    position: absolute;
+    left: 2%;
+    top: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MainMittel .mittel .img1 h2
+{
+    font-size: 1.5rem;
+    color:white;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MainMittel .mittel .img1 p
+{
+    font-size: 1.1rem;
+    color:rgb(226, 226, 226);
+    position: absolute;
+    left: 26%;
+    top: 33%;
+    font-weight: 100;
+    font-family: 'Satisfy', cursive;
+}
+.MainMittel .mittel .img2
+{
+    width: 30%;
+    height: 170px;
+    border-radius: 0;
+    background-image: url("img/coffee3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+    url('img/coffee3.jpg');
+    position: relative;
+
+}
+.MainMittel .mittel .img2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17%;
+    height: 42PX;
+    background-color: #e24f0a;
+    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+}
+.MainMittel .mittel .img2 span
+{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:white;
+    position: absolute;
+    left: 2%;
+    top:6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MainMittel .mittel .img2 h2
+{
+     font-size: 1.5rem;
+    color:white;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MainMittel .mittel .img2 p
+{
+    font-size: 1.1rem;
+    color:rgb(226, 226, 226);
+    position: absolute;
+    left: 26%;
+    top: 33%;
+    font-weight: 100;
+    font-family: 'Satisfy', cursive;
+}
+.MainMittel .mittel .img3
+{
+    width: 30%;
+    height: 170px;
+    border-radius: 0;
+    background-image: url("img/coffee4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: brightness(50%);*/
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.493), rgba(7, 36, 37, 0.425)),
+    url('img/coffee4.jpg');
+    position: relative;
+
+}
+.MainMittel .mittel .img3::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17%;
+    height: 42PX;
+    background-color: #e24f0a;
+    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+}
+.MainMittel .mittel .img3 span
+{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:white;
+    position: absolute;
+    left: 2%;
+    top: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MainMittel .mittel .img3 h2
+{
+     font-size: 1.5rem;
+    color:white;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MainMittel .mittel .img3 p
+{
+    font-size: 1.1rem;
+    color:rgb(226, 226, 226);
+    position: absolute;
+    left: 26%;
+    top: 33%;
+    font-weight: 100;
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+.AboutUs
+{
+    height: 100vh;
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+    padding-top: 2.1%;
+}
+.AboutUs h1
+{
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.AboutUs .AllInfoAboutUs
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.AboutUs .AllInfoAboutUs .divleft
+{
+    width: 48%;
+    padding-left: 1.5%;
+}
+.AboutUs .AllInfoAboutUs .divleft::before
+{
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    border-top: 75vh solid #d17621c4;
+    border-right: 46vw solid transparent;
+    width: 0;
+    position: absolute;
+}
+.AboutUs .AllInfoAboutUs .divleft h3
+{
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    color : white; 
+    font-weight: 500; 
+}
+.AboutUs .AllInfoAboutUs .divleft h2
+{
+    margin-top: 0;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+.AboutUs .AllInfoAboutUs .divleft p
+{
+    font-size: 1rem;
+    color : black; 
+    font-family: 'Roboto Slab', serif; 
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+} 
+.AboutUs .AllInfoAboutUs .divleft button
+{
+    width: 35%;
+    height: 45px;
+    margin: 3% 0%;
+   font-size: 1rem;
+   font-weight: 600;
+   border:none;
+   background-color: white;
+   border: 1px solid #D17721;
+   border-radius: 5px;
+   color: #D17721;
+   letter-spacing: 2px;
+   position: relative;
+}
+.AboutUs .AllInfoAboutUs .divleft button:hover
+{
+    width: 35%;
+    height: 45px;
+    margin: 3% 0%;
+   font-size: 1rem;
+   font-weight: 600;
+   border:none;
+   background-color: #D17721;
+   border: 1px solid white;
+   border-radius: 5px;
+   color: white;
+   transition: 0.5s ease-in-out;
+   letter-spacing: 2px;
+}
+.AboutUs .AllInfoAboutUs .divright
+{
+    width: 45%;
+}
+.AboutUs .AllInfoAboutUs .divright img
+{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.crcile1{
+    width: 90px;
+    height: 90px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    left: -1%;
+    top:18%;
+    z-index: -1;
+}
+.crcile2{
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    right: -2%;
+    top:17%;
+    z-index: -1;
+}
+.crcile3{
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    right: 15%;
+    top: 110%;
+    transition: translate(-50%,-50%);
+    z-index: -1;
+}
+.crcile4{
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    left: -4%;
+    top:130%;
+    transition: translate(-50%,-50%);
+    z-index: 1;
+}
+.crcile5{
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    left: 33%;
+    top:87%;
+    transition: translate(-50%,-50%);
+    z-index: -1;
+}
+.crcile6{
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border-radius: 50%;
+    border: 20px solid #d1762133;
+    position: absolute;
+    left: 62%;
+    top: 13%;
+    transition: translate(-50%,-50%);
+    z-index: -1;
+}
+.crcile7{
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border-radius: 50%;
+    border: 15px solid #d1762133;
+    position: absolute;
+    left: -3%;
+    top:70%;
+    transition: translate(-50%,-50%);
+    z-index: -1;
+}
+.crcile8{
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border-radius: 50%;
+    border: 15px solid #d1762133;
+    position: absolute;
+    right: 4%;
+    top: 215%;
+    transition: translate(-50%,-50%);
+    z-index: 1;
+}
+
+/**************Start Our Collection**************/
+.MostRequested
+{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    padding-top: 2.1%;
+}
+.MostRequested h1
+{
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.MostRequested .products
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    /*box-shadow: 0px 2px 9px 1px #777;*/
+}
+/*first product*/
+.MostRequested .products .product{
+    width: 320px;
+    height: 360px;
+    background-image: url("img/coffee3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee3.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+}
+.MostRequested .products .product .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 200px;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+   border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+/*hover*/
+.MostRequested .products .product:hover{
+    background-size:680px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    url('img/coffee3.jpg');
+}
+.MostRequested .products .product:hover .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product:hover .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 1.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product:hover .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    color: rgb(202, 201, 201);
+}
+.MostRequested .products .product:hover .probtn{
+    width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product:hover .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+    color:white;
+}
+.MostRequested .products .product:hover .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/* end first products*/
+
+
+/*sec product*/
+.MostRequested .products .product1{
+    width: 320px;
+    height: 360px;
+    background-image: url("img/coffee4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee4.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+
+}
+.MostRequested .products .product1 .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product1 .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product1 .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 200px;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1 .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1 .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product1 .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product1 .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product1 .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+/*hover*/
+.MostRequested .products .product1:hover{
+    background-size:600px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    url('img/coffee4.jpg');
+}
+.MostRequested .products .product1:hover .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product1:hover .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 1.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product1:hover .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    color: rgb(202, 201, 201);
+}
+.MostRequested .products .product1:hover .probtn{
+     width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product1:hover .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+    color:white;
+}
+.MostRequested .products .product1:hover .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/*end sec products*/
+
+
+/*3 product*/
+.MostRequested .products .product2{
+    width: 320px;
+    height: 360px;
+    background-image: url("img/coffee2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    position: relative;   
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
+    url('img/coffee2.jpg');
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px #777;
+
+}
+.MostRequested .products .product2 .productName1{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+    color: whitesmoke;
+    font-size: 0;
+    transition: all 0.6s ease-in-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MostRequested .products .product2 .productName2{
+    position: absolute;
+    left: -2%;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product2 .proinfo{
+    position: absolute;
+    left: 20%;
+    bottom: -5%;
+    width: 200px;
+    color: whitesmoke;
+    font-size: 0;
+    font-family: 'Satisfy', cursive;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2 .probtn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5%;
+    bottom: 0%;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 0;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2 .probtn:hover{
+    background-color: #e28024;
+}
+.MostRequested .products .product2 .infoleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: none;
+    width: 0%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+.MostRequested .products .product2 .infoleft div{
+    margin-top: 70px;
+    color: white;
+}
+.MostRequested .products .product2 .infoleft div i:hover{
+    color: #ff7b00;
+    font-size: 1.7rem;
+}
+
+
+
+/*hover*/
+.MostRequested .products .product2:hover{
+    background-size:600px;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    url('img/coffee2.jpg');
+}
+.MostRequested .products .product2:hover .productName1{
+    left: 28%;
+    top: 14%;
+    font-size: 2.3rem;
+    transition: all 0.6s ease-in-out;
+}
+.MostRequested .products .product2:hover .productName2{
+    left: 38%;
+    top: 25%;
+    font-size: 1.5rem;
+    transition: all 0.6s linear;
+}
+.MostRequested .products .product2:hover .proinfo{
+    left: 28%;
+    bottom: 35%;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    color: rgb(202, 201, 201);
+}
+.MostRequested .products .product2:hover .probtn{
+     width: 50%;
+    height: 35px;
+    right: 15%;
+    left: 35%;
+    bottom: 10%;
+    background-color: #fa902d;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+.MostRequested .products .product2:hover .probtn:hover{
+    background-color: #ffba7a;
+    transition: 0s;
+    color:white;
+}
+.MostRequested .products .product2:hover .infoleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 360px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    background-color: rgba(7, 3, 68, 0.842);
+}
+/*end 3 products*/
+/**************End Our Collection**************/
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* width */
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+  }
+  
+  /* Track */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-track {
+    background: antiquewhite; 
+  }
+   
+  /* Handle */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-thumb {
+    background: rgb(250, 202, 139); 
+  }
+  
+  /* Handle on hover */
+  .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 66, 66); 
+  }
+
+/**************Start Hot Drink**************/
+.proHotDrink{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.829);
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transform: translate(0,0);
+    z-index: 201;
+}
+.proHotDrink .img0{
+    position: absolute;
+    left: 50%;
+    top: -9.5%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    
+}
+.proHotDrink .mainproHotdrink{
+    width: 70%;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    background-image: url("img/hotdrink2.jpg");
+     background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(rgba(6, 35, 37, 0.466), rgba(7, 36, 37, 0.459)),
+    url('img/hotdrink2.jpg');
+}
+.proHotDrink .mainproHotdrink #check8{
+    position: absolute;
+    right: 5%;
+    top:5%;
+}
+.proHotDrink .mainproHotdrink .divmainpro{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    height: 310px;
+    background-color:rgba(240, 248, 255, 0.5);
+    overflow:scroll;
+}
+.proHotDrink .mainproHotdrink h2{
+    text-align: center;
+    color: rgb(230, 228, 228);
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro{
+    background-color: white;
+    min-width: 350px;
+    height: 270px;
+    display: flex;
+    border-radius: 10px;
+    margin: 0 1%;
+    overflow:hidden;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .divl{
+   background-color: antiquewhite;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 45%;
+   position:relative;
+    z-index:1;
+   border-radius: 10px 400px 400px 10px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .divr{
+    text-align: center;
+    width: 55%;
+ }
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .imgpro{
+    width: 100%;
+    height: 120px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .infopro{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+    text-align: left;
+    position:relative;
+    left:-17%;
+    
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro{
+    color: #777;
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 0.9rem;
+    overflow-y: scroll;
+    height: 100px;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .pricepro{
+    font-size: 1rem;
+    font-weight: 500;
+    color:white;
+    background-color: #ca065431;
+    width: 115%;
+    margin: 5px 0 5px 0;
+    color:#ca0655;
+    padding : 5px 0;
+    position:relative;
+    left:-11%;
+    z-index:0;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .btnpro{
+    width: 150px;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #06eb3ff8;
+    border:none;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    margin: 10px 0 1px 0 ;
+}
+.proHotDrink .mainproHotdrink .divmainpro .cardpro .btnpro:hover{
+    width: 150px;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #05c435f8;
+    border:none;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+}
+
+#checkMenuHotDrink{display: none;}
+#checkMenuHotDrinkColse{display: none;}
+.proHotDrink .mainproHotdrink .checkMenuHotDrinkColse2{
+    display: block;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 5.5%;
+    top:3%;
+    color:white;
+}
+/**************End Hot Drink**************/
+
+/**************Start Our Menu**************/
+.OurMenu
+{
+    height: 90vh;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    padding-top: 2.1%;
+}
+.OurMenu h1
+{
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.OurMenu .maindiv
+{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 2px 9px 1px #777;
+}
+/*start div left*/
+.OurMenu .maindiv .divleft
+{
+    width: 50%;
+    height: 65vh;
+    text-align: center;
+    border-right: 2px solid #e24e0a48;
+}
+.OurMenu .maindiv .divleft h2
+{
+    background-color: #a1dd1638;
+    width: 20%;
+    margin: 5% 40%;
+    padding: 15px;
+    color:#ac631e;
+    border-radius: 150px 0 150px 0;
+}
+.OurMenu .maindiv .divleft label
+{
+    display: block;
+    text-align: center;
+    background-color: #cecece;
+    width: 50%;
+    height: 40px;
+    margin: 5% 25%;
+    position: relative;
+}
+.OurMenu .maindiv .divleft label span
+{
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top:0%;
+    width: 95%;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.OurMenu .maindiv .divleft label span:hover
+{
+    color:white;
+    font-weight: 600;
+}
+.OurMenu .maindiv .divleft label::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 4%;
+   height: 40px;
+   background-color: #ca0655;
+   z-index: 0;
+   color: white;
+}
+.OurMenu .maindiv .divleft label:hover::before
+{
+    width: 100%;
+    transition: width 1s;
+}
+/*end div left*/
+
+/*start div right*/
+.OurMenu .maindiv .divright
+{
+    width: 50%;
+    height: 65vh;
+    text-align: center;
+}
+.OurMenu .maindiv .divright h2
+{
+    background-color: #a1dd1638;
+    width: 20%;
+    margin: 5% 40%;
+    padding: 15px;
+    color:#ac631e;
+    border-radius: 150px 0 150px 0;
+}
+.OurMenu .maindiv .divright label
+{
+    display: block;
+    text-align: center;
+    background-color: #cecece;
+    width: 50%;
+    height: 40px;
+    margin: 5% 25%;
+    position: relative;
+}
+.OurMenu .maindiv .divright label span
+{
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top:0%;
+    width: 95%;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.OurMenu .maindiv .divright label span:hover
+{
+    color:white;
+}
+.OurMenu .maindiv .divright label::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 4%;
+   height: 40px;
+   background-color: #ca0655;
+   z-index: 0;
+   color: white;
+}
+.OurMenu .maindiv .divright label:hover::before
+{
+    width: 100%;
+    transition: width 1s;
+}
+/*end div right*/
+/**************End Our Menu**************/
