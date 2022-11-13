@@ -291,14 +291,14 @@ body{
 .img1{
     border-radius: 10px;
     object-fit: cover;
-    background-image: url("img/coffee.cms");
+    background-image: url("img/coffee.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     /*filter: brightness(50%);*/
     background-image: 
     linear-gradient(rgba(6, 35, 37, 0.664), rgba(7, 36, 37, 0.664)),
-    url('img/coffee.cms');
+    url('img/coffee.webp');
 }
 .img2{
     border-radius: 10px;
