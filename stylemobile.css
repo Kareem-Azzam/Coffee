@@ -630,6 +630,7 @@
         overflow: hidden;
         padding-top: 9.2%;
         color: var(--secondary-color);
+        background-color:var(--primary-color);
     }
     .AboutUs h1
     {
@@ -837,7 +838,8 @@
     margin: 7.5%;
     position: relative;
     padding-top: 9.2%;
-    color: black;
+    color: var(--secondary-color);
+    background-color:var(--primary-color);
 }
 .MostRequested h1
 {
