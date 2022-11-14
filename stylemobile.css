@@ -11,8 +11,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
+        color: white;
     }
 
     :root
@@ -110,7 +109,7 @@
         font-size: 1.3rem;
         color : #D17721;
         flex: auto;
-        text-align: left;
+        text-align: center;
         margin: 0 2%;
     }
     .Dark-Moon
@@ -118,7 +117,7 @@
         font-size: 1.3rem;
         color:var(--secondary-color);
         flex: auto;
-        text-align: left;
+        text-align: center;
         margin: 0 2%;
     }
     .menu{
@@ -1288,7 +1287,7 @@
   
   /* Track */
   .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-track {
-    background: antiquewhite; 
+    background: var(--imagepro-color); 
   }
    
   /* Handle */
