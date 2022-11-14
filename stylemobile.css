@@ -26,7 +26,7 @@
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
 }
 .dark-theme{
-    --primary-color: rgb(9, 5, 32);
+    --primary-color: #121212;
     --secondary-color: rgb(241, 241, 241);
     --thertee-color: rgb(13, 8, 46);
     --forte-color: rgb(9, 5, 32);
