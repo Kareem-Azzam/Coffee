@@ -108,7 +108,7 @@
     {
         font-size: 1.3rem;
         color : #D17721;
-        flex: 0;
+        flex: auto;
         text-align: right;
         margin: 0 2%;
     }
@@ -116,7 +116,7 @@
     {
         font-size: 1.3rem;
         color:var(--secondary-color);
-        flex: 0;
+        flex: auto;
         text-align: right;
         margin: 0 2%;
     }
