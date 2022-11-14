@@ -110,7 +110,7 @@
         font-size: 1.3rem;
         color : #D17721;
         flex: auto;
-        text-align: right;
+        text-align: left;
         margin: 0 2%;
     }
     .Dark-Moon
@@ -118,7 +118,7 @@
         font-size: 1.3rem;
         color:var(--secondary-color);
         flex: auto;
-        text-align: right;
+        text-align: left;
         margin: 0 2%;
     }
     .menu{
