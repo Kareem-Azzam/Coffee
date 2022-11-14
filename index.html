@@ -17,6 +17,7 @@
         <section class="navbar">
             <label class = "logo"><img src = "img/logo.png">CoffeeRoasters</label>
             <label class = "shoping"><i class="fa fa-shopping-cart"></i></label>
+            <label class = "Dark-Moon"><i id = "Dark-Moon" class="fa fa-moon"></i></label>
             <ul id = "ull">
                 <input type="checkbox" id="check2" onclick="checkkclo()">
                 <label for = "check2" class = "colsemenu"><i class="fa fa-close"></i></label>
@@ -153,7 +154,7 @@
                 <button class = "probtn" type="submit">Order Now</button>
                 <div class="infoleft">
                     <div><i class="fa fa-heart"></i></div>
-                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-bookmark"></i></div>
                     <div><i class="fa fa-info-circle"></i></div>
                 </div>
             </div>
@@ -165,7 +166,7 @@
                 <button class = "probtn" type="submit">Order Now</button>
                 <div class="infoleft">
                     <div><i class="fa fa-heart"></i></div>
-                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-bookmark"></i></div>
                     <div><i class="fa fa-info-circle"></i></div>
                 </div>
             </div>
@@ -177,7 +178,7 @@
                 <button class = "probtn" type="submit">Order Now</button>
                 <div class="infoleft">
                     <div><i class="fa fa-heart"></i></div>
-                    <div><i class="fa fa-save"></i></div>
+                    <div><i class="fa fa-bookmark"></i></div>
                     <div><i class="fa fa-info-circle"></i></div>
                 </div>
             </div>
@@ -493,6 +494,21 @@
         function clickOurCollectionclose(){
             document.getElementById("UlOurCollection").style.display = "none";
         }
+
+
+        var icon = document.getElementById("Dark-Moon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme"))
+            {
+                icon.className = "fas fa-sun";
+            }
+            else{
+                icon.className = "fa fa-moon";
+            }
+        }
+
+
     </script>
       <script src="https://kit.fontawesome.com/5d2ad38953.js" crossorigin="anonymous"></script>
 
