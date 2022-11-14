@@ -1288,7 +1288,7 @@ body{
   
   /* Track */
   .proHotDrink .mainproHotdrink .divmainpro .cardpro .frompro::-webkit-scrollbar-track {
-    background: antiquewhite; 
+    background: var(--imagepro-color); 
   }
    
   /* Handle */
