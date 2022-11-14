@@ -4,8 +4,29 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
+:root
+{
+    --primary-color: white;
+    --secondary-color: black;
+    --thertee-color: rgb(243, 243, 243);
+    --forte-color: #cecece;
+    --shadow-color: #777;
+    --imagepro-color: antiquewhite;
+    --backgroubdpro-color: rgba(240, 248, 255, 0.5);
+}
+.dark-theme{
+    --primary-color: rgb(9, 5, 32);
+    --secondary-color: rgb(241, 241, 241);
+    --thertee-color: rgb(13, 8, 46);
+    --forte-color: rgb(9, 5, 32);
+    --shadow-color: rgb(0, 0, 0);
+    --imagepro-color: rgb(18, 9, 70);
+    --backgroubdpro-color: rgba(16, 8, 61, 0.5);
+}
 
 .colf{
     color:#D17721;
@@ -73,7 +94,7 @@ body{
     height:50px;
     text-align:center;
     border-radius:10px;
-    box-shadow: 0px 2px 4px 1px #777;    
+    box-shadow: 0px 2px 4px 1px var(--shadow-color);    
     text-align:center;
 }
 .ToUp:hover
@@ -84,7 +105,7 @@ body{
     transition: 0.8s;
     background-color:#f10b67;
     border-radius:10px;
-    box-shadow: 1px 2px 4px 2px rgb(173, 173, 173);
+    box-shadow: 1px 2px 4px 2px var(--shadow-color);
     padding:5px;
 }
 .show
@@ -99,10 +120,11 @@ body{
 
 
 .ss{
-    background-color: white;
-    -webkit-box-shadow: 0 8px 6px -6px #777;
-    -moz-box-shadow: 0 8px 6px -6px #777;
-    box-shadow: 0 8px 12px -6px #777;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    -webkit-box-shadow: 0 8px 6px -6px var(--shadow-color);
+    -moz-box-shadow: 0 8px 6px -6px var(--shadow-color);
+    box-shadow: 0 8px 12px -6px var(--shadow-color);
 }
 
 
@@ -131,9 +153,18 @@ body{
 .shoping
 {
     font-size: 1.3rem;
-    color : rgb(172, 172, 172);
-    position: relative;
-    left:15%;
+    color : #D17721;
+    flex: 10;
+    text-align: right;
+    margin: 0 2%;
+}
+.Dark-Moon
+{
+    font-size: 1.3rem;
+    color : var(--secondary-color);
+    flex: 1;
+    text-align: right;
+    margin: 0 2%;
 }
 .menu{
     display: none;
@@ -186,7 +217,7 @@ body{
     top:25px;
     display: none;
     height: 100px;
-    background-color: white;
+    background-color: var(--primary-color);
     -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -208,7 +239,7 @@ body{
  .navbar .OurCollection .UlOurCollection li a{
     padding: 0 5px;
     text-decoration: none;
-    color : black;
+    color : var(--secondary-color);
     font-size: 0.9rem;
 }
  .navbar .OurCollection .UlOurCollection li a:hover{
@@ -422,16 +453,16 @@ body{
     width: 70%;
     height: 200px;
     /*background-color: #37FF87;*/
-    background-color:white;
+    background-color:var(--primary-color);
     position: absolute;
     top: 81%;
     margin: 0 11%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 15px -6px #777;
+    -webkit-box-shadow: 0 10px 6px -6px var(--shadow-color);
+    -moz-box-shadow: 0 10px 6px -6px var(--shadow-color);
+    box-shadow: 0 10px 15px -6px var(--shadow-color);
 }
 .MainMittel .mittel .img1
 {
@@ -617,6 +648,7 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
+    color: var(--secondary-color);
 }
 .AboutUs .AllInfoAboutUs
 {
@@ -646,7 +678,7 @@ body{
 {
     margin-bottom: 2%;
     font-size: 1.5rem;
-    color : white; 
+    color : var(--primary-color); 
     font-weight: 500; 
 }
 .AboutUs .AllInfoAboutUs .divleft h2
@@ -654,11 +686,12 @@ body{
     margin-top: 0;
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
+    color: var(--secondary-color);
 }
 .AboutUs .AllInfoAboutUs .divleft p
 {
     font-size: 1rem;
-    color : black; 
+    color : var(--secondary-color); 
     font-family: 'Roboto Slab', serif; 
     letter-spacing: 1px;
     line-height: 1.5rem;
@@ -671,7 +704,7 @@ body{
    font-size: 1rem;
    font-weight: 600;
    border:none;
-   background-color: white;
+   background-color: var(--primary-color);
    border: 1px solid #D17721;
    border-radius: 5px;
    color: #D17721;
@@ -813,6 +846,7 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
+    color: var(--secondary-color);
 }
 .MostRequested .products
 {
@@ -835,7 +869,7 @@ body{
     linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
     url('img/coffee3.jpg');
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 1px #777;
+    box-shadow: 1px 2px 5px 1px var(--shadow-color);
 }
 .MostRequested .products .product .productName1{
     position: absolute;
@@ -871,7 +905,7 @@ body{
     height: 0;
     right: -5%;
     bottom: 0%;
-    background-color: white;
+    background-color: var(--primary-color);
     border: 0;
     border-radius: 5px;
     color: rgb(15, 15, 15);
@@ -973,7 +1007,7 @@ body{
     linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
     url('img/coffee4.jpg');
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 1px #777;
+    box-shadow: 1px 2px 5px 1px var(--shadow-color);
 
 }
 .MostRequested .products .product1 .productName1{
@@ -1010,7 +1044,7 @@ body{
     height: 0;
     right: -5%;
     bottom: 0%;
-    background-color: white;
+    background-color: var(--primary-color);
     border: 0;
     border-radius: 5px;
     color: rgb(15, 15, 15);
@@ -1112,7 +1146,7 @@ body{
     linear-gradient(rgba(6, 35, 37, 0), rgba(7, 36, 37, 0)),
     url('img/coffee2.jpg');
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 1px #777;
+    box-shadow: 1px 2px 5px 1px var(--shadow-color);
 
 }
 .MostRequested .products .product2 .productName1{
@@ -1149,7 +1183,7 @@ body{
     height: 0;
     right: -5%;
     bottom: 0%;
-    background-color: white;
+    background-color: var(--primary-color);
     border: 0;
     border-radius: 5px;
     color: rgb(15, 15, 15);
@@ -1312,7 +1346,7 @@ body{
     display: flex;
     align-items: center;
     height: 310px;
-    background-color:rgba(240, 248, 255, 0.5);
+    background-color:var(--backgroubdpro-color);
     overflow:scroll;
 }
 .proHotDrink .mainproHotdrink h2{
@@ -1320,7 +1354,7 @@ body{
     color: rgb(230, 228, 228);
 }
 .proHotDrink .mainproHotdrink .divmainpro .cardpro{
-    background-color: white;
+    background-color: var(--primary-color);
     min-width: 350px;
     height: 270px;
     display: flex;
@@ -1329,7 +1363,7 @@ body{
     overflow:hidden;
 }
 .proHotDrink .mainproHotdrink .divmainpro .cardpro .divl{
-   background-color: antiquewhite;
+   background-color: var(--imagepro-color);
    display: flex;
    justify-content: center;
    align-items:center;
@@ -1349,7 +1383,7 @@ body{
 .proHotDrink .mainproHotdrink .divmainpro .cardpro .infopro{
     font-size: 1.1rem;
     font-weight: 500;
-    color: black;
+    color: var(--secondary-color);
     width: 100%;
     text-align: left;
     position:relative;
@@ -1427,12 +1461,13 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
+    color: var(--secondary-color);
 }
 .OurMenu .maindiv
 {
     display: flex;
-    background-color: rgb(243, 243, 243);
-    box-shadow: 0px 2px 9px 1px #777;
+    background-color: var(--thertee-color);
+    box-shadow: 0px 2px 9px 1px var(--shadow-color);
 }
 /*start div left*/
 .OurMenu .maindiv .divleft
@@ -1455,11 +1490,12 @@ body{
 {
     display: block;
     text-align: center;
-    background-color: #cecece;
+    background-color: var(--forte-color);
     width: 50%;
     height: 40px;
     margin: 5% 25%;
     position: relative;
+    border: 1px solid #ca0655;
 }
 .OurMenu .maindiv .divleft label span
 {
@@ -1474,11 +1510,11 @@ body{
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: black;
+    color: var(--secondary-color);
 }
 .OurMenu .maindiv .divleft label span:hover
 {
-    color:white;
+    color:var(--primary-color);
     font-weight: 600;
 }
 .OurMenu .maindiv .divleft label::before
@@ -1520,11 +1556,12 @@ body{
 {
     display: block;
     text-align: center;
-    background-color: #cecece;
+    background-color: var(--forte-color);
     width: 50%;
     height: 40px;
     margin: 5% 25%;
     position: relative;
+    border: 1px solid #ca0655;
 }
 .OurMenu .maindiv .divright label span
 {
@@ -1539,11 +1576,11 @@ body{
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: black;
+    color: var(--secondary-color);
 }
 .OurMenu .maindiv .divright label span:hover
 {
-    color:white;
+    color:var(--primary-color);
 }
 .OurMenu .maindiv .divright label::before
 {
