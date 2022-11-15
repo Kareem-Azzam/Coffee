@@ -5,26 +5,30 @@ body{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 
 :root
 {
     --primary-color: white;
-    --secondary-color: black;
-    --thertee-color: rgb(243, 243, 243);
-    --forte-color: #cecece;
+    --primary-navbar-color: white;
+    --primary-card-color: white;
+    --primary-text-color: black;
+    --background-mainOurmenu-color: rgb(243, 243, 243);
+    --background-mainOurmenu-label-color: #cecece;
     --shadow-color: #777;
     --imagepro-color: antiquewhite;
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
 }
 .dark-theme{
-    --primary-color: #121212;
-    --secondary-color: rgb(241, 241, 241);
-    --thertee-color: #1212129c;
-    --forte-color: #121212;
-    --shadow-color: rgb(0, 0, 0);
-    --imagepro-color: #242323;
+    --primary-color: #15202B;
+    --primary-navbar-color: #15202B;
+    --primary-card-color: #192734;
+    --primary-text-color: #ffffff;
+    --background-mainOurmenu-color: #192734;
+    --background-mainOurmenu-label-color: #15202B;
+    --shadow-color: rgb(20, 18, 18);
+    --imagepro-color: #192734;
     --backgroubdpro-color: #1212127c;
 }
 
@@ -120,8 +124,8 @@ body{
 
 
 .ss{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-navbar-color);
+    color: var(--primary-text-color);
     -webkit-box-shadow: 0 8px 6px -6px var(--shadow-color);
     -moz-box-shadow: 0 8px 6px -6px var(--shadow-color);
     box-shadow: 0 8px 12px -6px var(--shadow-color);
@@ -161,7 +165,7 @@ body{
 .Dark-Moon
 {
     font-size: 1.3rem;
-    color : var(--secondary-color);
+    color : var(--primary-text-color);
     flex: 1;
     text-align: right;
     margin: 0 2%;
@@ -239,7 +243,7 @@ body{
  .navbar .OurCollection .UlOurCollection li a{
     padding: 0 5px;
     text-decoration: none;
-    color : var(--secondary-color);
+    color : var(--primary-text-color);
     font-size: 0.9rem;
 }
  .navbar .OurCollection .UlOurCollection li a:hover{
@@ -453,7 +457,7 @@ body{
     width: 70%;
     height: 200px;
     /*background-color: #37FF87;*/
-    background-color:var(--primary-color);
+    background-color:var(--primary-card-color);
     position: absolute;
     top: 81%;
     margin: 0 11%;
@@ -648,7 +652,7 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .AboutUs .AllInfoAboutUs
 {
@@ -669,7 +673,7 @@ body{
     z-index: -1;
     top: 0%;
     left: 0%;
-    border-top: 75vh solid #d17621c4;
+    border-top: 75vh solid #fa8416c4;
     border-right: 46vw solid transparent;
     width: 0;
     position: absolute;
@@ -686,12 +690,12 @@ body{
     margin-top: 0;
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .AboutUs .AllInfoAboutUs .divleft p
 {
     font-size: 1rem;
-    color : var(--secondary-color); 
+    color : var(--primary-text-color); 
     font-family: 'Roboto Slab', serif; 
     letter-spacing: 1px;
     line-height: 1.5rem;
@@ -846,7 +850,7 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .MostRequested .products
 {
@@ -944,7 +948,7 @@ body{
 .MostRequested .products .product:hover{
     background-size:680px;
     background-image: 
-    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    linear-gradient(rgba(6, 35, 37, 0.678), rgba(7, 36, 37, 0.911)),
     url('img/coffee3.jpg');
 }
 .MostRequested .products .product:hover .productName1{
@@ -1083,7 +1087,7 @@ body{
 .MostRequested .products .product1:hover{
     background-size:600px;
     background-image: 
-    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    linear-gradient(rgba(6, 35, 37, 0.678), rgba(7, 36, 37, 0.911)),
     url('img/coffee4.jpg');
 }
 .MostRequested .products .product1:hover .productName1{
@@ -1223,7 +1227,7 @@ body{
 .MostRequested .products .product2:hover{
     background-size:600px;
     background-image: 
-    linear-gradient(rgba(6, 35, 37, 0.596), rgba(7, 36, 37, 0.568)),
+    linear-gradient(rgba(6, 35, 37, 0.678), rgba(7, 36, 37, 0.911)),
     url('img/coffee2.jpg');
 }
 .MostRequested .products .product2:hover .productName1{
@@ -1383,7 +1387,7 @@ body{
 .proHotDrink .mainproHotdrink .divmainpro .cardpro .infopro{
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
     width: 100%;
     text-align: left;
     position:relative;
@@ -1407,7 +1411,7 @@ body{
     background-color: #ca065431;
     width: 115%;
     margin: 5px 0 5px 0;
-    color:#ca0655;
+    color:var(--primary-text-color);
     padding : 5px 0;
     position:relative;
     left:-11%;
@@ -1461,19 +1465,20 @@ body{
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv
 {
     display: flex;
-    background-color: var(--thertee-color);
+    background-color: var(--background-mainOurmenu-color);
     box-shadow: 0px 2px 9px 1px var(--shadow-color);
+    height: 70vh;
 }
 /*start div left*/
 .OurMenu .maindiv .divleft
 {
     width: 50%;
-    height: 65vh;
+    height: 70vh;
     text-align: center;
     border-right: 2px solid #e24e0a48;
 }
@@ -1490,12 +1495,14 @@ body{
 {
     display: block;
     text-align: center;
-    background-color: var(--forte-color);
+    background-color: var(--background-mainOurmenu-label-color);
     width: 50%;
-    height: 40px;
+    height: 50px;
     margin: 5% 25%;
     position: relative;
-    border: 1px solid #ca0655;
+    border: 1px solid rgba(119, 119, 119, 0.425);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .OurMenu .maindiv .divleft label span
 {
@@ -1504,13 +1511,13 @@ body{
     left: 5%;
     top:0%;
     width: 95%;
-    height: 30px;
+    height: 40px;
     padding: 5px 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv .divleft label span:hover
 {
@@ -1523,16 +1530,17 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-   width: 4%;
-   height: 40px;
+   width: 10px;
+   height: 50px;
    background-color: #ca0655;
    z-index: 0;
    color: white;
+   border-radius: 10px 0 0 10px;
 }
 .OurMenu .maindiv .divleft label:hover::before
 {
     width: 100%;
-    transition: width 1s;
+    transition: width 0.5s;
 }
 /*end div left*/
 
@@ -1556,12 +1564,14 @@ body{
 {
     display: block;
     text-align: center;
-    background-color: var(--forte-color);
+    background-color: var(--background-mainOurmenu-label-color);
     width: 50%;
-    height: 40px;
+    height: 50px;
     margin: 5% 25%;
     position: relative;
-    border: 1px solid #ca0655;
+    border: 1px solid rgba(119, 119, 119, 0.425);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .OurMenu .maindiv .divright label span
 {
@@ -1570,13 +1580,13 @@ body{
     left: 5%;
     top:0%;
     width: 95%;
-    height: 30px;
+    height: 40px;
     padding: 5px 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv .divright label span:hover
 {
@@ -1588,8 +1598,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-   width: 4%;
-   height: 40px;
+   width: 10px;
+   height: 50px;
    background-color: #ca0655;
    z-index: 0;
    color: white;
@@ -1597,7 +1607,7 @@ body{
 .OurMenu .maindiv .divright label:hover::before
 {
     width: 100%;
-    transition: width 1s;
+    transition: width 0.5s;
 }
 /*end div right*/
 /**************End Our Menu**************/
