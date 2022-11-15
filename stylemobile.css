@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
 
     
     html
@@ -17,20 +17,24 @@
     :root
 {
     --primary-color: white;
-    --secondary-color: black;
-    --thertee-color: rgb(243, 243, 243);
-    --forte-color: #cecece;
+    --primary-navbar-color: white;
+    --primary-card-color: white;
+    --primary-text-color: black;
+    --background-mainOurmenu-color: rgb(243, 243, 243);
+    --background-mainOurmenu-label-color: #cecece;
     --shadow-color: #777;
     --imagepro-color: antiquewhite;
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
 }
 .dark-theme{
-    --primary-color: #121212;
-    --secondary-color: rgb(241, 241, 241);
-    --thertee-color: #1212129c;
-    --forte-color: #121212;
-    --shadow-color: rgb(0, 0, 0);
-    --imagepro-color: #242323;
+    --primary-color: #15202B;
+    --primary-navbar-color: #15202B;
+    --primary-card-color: #192734;
+    --primary-text-color: #ffffff;
+    --background-mainOurmenu-color: #192734;
+    --background-mainOurmenu-label-color: #15202B;
+    --shadow-color: rgb(20, 18, 18);
+    --imagepro-color: #192734;
     --backgroubdpro-color: #1212127c;
 }
 
@@ -74,8 +78,8 @@
     }
     
     .ss{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-navbar-color);
+    color: var(--primary-text-color);
     -webkit-box-shadow: 0 8px 6px -6px var(--shadow-color);
     -moz-box-shadow: 0 8px 6px -6px var(--shadow-color);
     box-shadow: 0 8px 12px -6px var(--shadow-color);
@@ -115,7 +119,7 @@
     .Dark-Moon
     {
         font-size: 1.3rem;
-        color:var(--secondary-color);
+        color:var(--primary-text-color);
         flex: auto;
         text-align: left;
         margin: 0 2%;
@@ -435,7 +439,7 @@
         margin: 0 10%;
         height: auto;
         /*background-color: #37FF87;*/
-        background-color:var(--primary-color);
+        background-color:var(--primary-card-color);
         position: absolute;
         top: 490px;
         padding: 2.5% 0;
@@ -628,13 +632,13 @@
         margin: 5% 2.5% 0 2.5%;
         overflow: hidden;
         padding-top: 9.2%;
-        color: var(--secondary-color);
     }
     .AboutUs h1
     {
         width: 100%;
         font-size: 2rem;
         text-align: center;
+        color: var(--primary-text-color);
     }
     .AboutUs .AllInfoAboutUs
     {
@@ -656,7 +660,7 @@
         z-index: -1;
         top: 0%;
         left: 0%;
-        border-top: 400px solid #d17621c4;
+        border-top: 400px solid #fa8416c4;
         border-right: 95vw solid transparent;
         width: 0;
         position: absolute;
@@ -674,13 +678,13 @@
         margin-top: 2%;
         font-size: 1.1rem;
         font-weight: 600; 
-        text-align:center;
-        color: var(--secondary-color);
+        text-align:left;
+        color: var(--primary-text-color);
     }
     .AboutUs .AllInfoAboutUs .divleft p
     {
         font-size: 0.9rem;
-        color : var(--secondary-color);  
+        color : var(--primary-text-color);  
         font-weight: 400; 
         letter-spacing: 1px;
         margin-top: 10%;
@@ -836,14 +840,14 @@
     margin: 7.5%;
     position: relative;
     padding-top: 9.2%;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .MostRequested h1
 {
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .MostRequested .products
 {
@@ -1381,7 +1385,7 @@
 .proHotDrink .mainproHotdrink .divmainpro .cardpro .infopro{
    font-size: 1.1rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
     width: 100%;
     text-align: left;
     position:relative;
@@ -1404,7 +1408,7 @@
     background-color: #ca065431;
     width: 115%;
     margin: 5px 0 5px 0;
-    color:#ca0655;
+    color:var(--primary-text-color);
     padding : 5px 0;
     position:relative;
     left:-13%;
@@ -1459,14 +1463,15 @@
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv
 {
     display: block;
-    background-color: var(--thertee-color);
+    background-color: var(--background-mainOurmenu-color);
     box-shadow: none;
     padding: 5px 0;
+    height: auto;
 }
 /*start div left*/
 .OurMenu .maindiv .divleft
@@ -1489,12 +1494,14 @@
 {
     display: block;
     text-align: center;
-    background-color: var(--forte-color);
+    background-color: var(--background-mainOurmenu-label-color);
     width: 90%;
-    height: 40px;
+    height: 50px;
     margin: 5%;
     position: relative;
-    border: 1px solid #ca0655;
+    border: 1px solid rgba(119, 119, 119, 0.425);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .OurMenu .maindiv .divleft label span
 {
@@ -1503,13 +1510,13 @@
     left: 5%;
     top:0%;
     width: 95%;
-    height: 30px;
+    height: 40px;
     padding: 5px 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv .divleft label span:hover
 {
@@ -1521,8 +1528,8 @@
     position: absolute;
     top: 0;
     left: 0;
-   width: 4%;
-   height: 40px;
+   width: 10px;
+   height: 50px;
    background-color: #ca0655;
    z-index: 0;
    color: white;
@@ -1555,12 +1562,14 @@
 {
     display: block;
     text-align: center;
-    background-color: var(--forte-color);
+    background-color: var(--background-mainOurmenu-label-color);
     width: 90%;
-    height: 40px;
+    height: 50px;
     margin: 5%;
     position: relative;
-    border: 1px solid #ca0655;
+    border: 1px solid rgba(119, 119, 119, 0.425);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .OurMenu .maindiv .divright label span
 {
@@ -1569,13 +1578,13 @@
     left: 5%;
     top:0%;
     width: 95%;
-    height: 30px;
+    height: 40px;
     padding: 5px 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--primary-text-color);
 }
 .OurMenu .maindiv .divright label span:hover
 {
@@ -1587,8 +1596,8 @@
     position: absolute;
     top: 0;
     left: 0;
-   width: 4%;
-   height: 40px;
+   width: 10px;
+   height: 50px;
    background-color: #ca0655;
    z-index: 0;
    color: white;
