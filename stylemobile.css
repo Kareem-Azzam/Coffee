@@ -25,6 +25,8 @@
     --shadow-color: #777;
     --imagepro-color: antiquewhite;
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
+    --backgroubcontact-color: #12066b;
+    --backgroubauboutus-color: #fa8416c4;
 }
 .dark-theme{
     --primary-color: #15202B;
@@ -36,6 +38,8 @@
     --shadow-color: rgb(20, 18, 18);
     --imagepro-color: #192734;
     --backgroubdpro-color: #1212127c;
+    --backgroubcontact-color: #15202B;
+    --backgroubauboutus-color: #7c3c01;
 }
 
     .divall
@@ -660,7 +664,7 @@
         z-index: -1;
         top: 0%;
         left: 0%;
-        border-top: 400px solid #fa8416c4;
+        border-top: 400px solid var(--backgroubauboutus-color);
         border-right: 95vw solid transparent;
         width: 0;
         position: absolute;
@@ -1451,7 +1455,7 @@
 /**************Start Our Menu**************/
 .OurMenu
 {
-    height: 90vh;
+    height: auto;
     width: 100%;
     margin-top: 5%;
     position: relative;
@@ -1609,5 +1613,208 @@
 }
 /*end div right*/
 /**************End Our Menu**************/
+
+
+.Contact
+        {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-top: 5%;
+            padding-top: 2.1%;
+        }
+        .Contact .Map
+        {
+            width: 100%;
+            height: 400px;
+        }
+        .Contact .CardContact
+        {
+            width: 95%;
+            height: auto;
+            margin: 0 2.5%;
+            background-color: var(--backgroubcontact-color);
+            position: absolute;
+            top: 270px;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-color);
+            color: var(--primary-text-color);
+        }
+        .Contact .CardContact .CardContactLeft
+        {
+            width: 100%;
+            height: auto;
+            position: relative;
+            background-color: var(--primary-card-color);
+            margin: 0%;
+        }
+        .Contact .CardContact .CardContactLeft p
+        {
+            font-size: 1.5rem;
+            width: 80%;
+            margin: 0% 10% 0 10%;
+            display: flex;
+            padding-top: 5%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Contact .CardContact .CardContactLeft form .inputbox
+        {
+           padding: 9px 0;
+           margin: 17% 0;
+           border-bottom: 1px solid rgb(223, 222, 222);
+           position: relative;
+        }
+        .Contact .CardContact .CardContactLeft form .inputbox .inputboxname1 , .inputboxname2 , .inputboxname3 , .inputboxname4
+        {
+           display: block;
+           margin: 3% 0;
+           position: absolute;
+           z-index: 0;
+           top: 7px;
+           transition: all 0.5s;
+           font-size: 1rem;
+        }
+        .Contact .CardContact .CardContactLeft form .inputbox input[type = "text"] , input[type = "email"]
+        {
+          width: 90%;
+          height: 30px;
+          font-size: 1rem;
+          outline: none;
+          border: none;
+          position: relative;
+          z-index: 0;
+          background-color: rgba(255, 255, 255, 0);
+          color: var(--primary-text-color);
+        }
+        
+        .Contact .CardContact .CardContactLeft form
+        {
+            display: block;
+            justify-content: space-between;
+            height: auto;
+            width: 80%;
+            margin: 0 10%;
+        }
+        .Contact .CardContact .CardContactLeft form .formleft
+        {
+            width: 100%;
+        }
+        .Contact .CardContact .CardContactLeft form .formright
+        {
+            width: 100%;
+        }
+        .Contact .CardContact .CardContactLeft form .inputboxMessage
+        {
+            padding: 9px 0;
+            margin: 17% 0;
+           position: relative;
+           bottom: 0;
+           width: 100%; 
+        }
+        .Contact .CardContact .CardContactLeft form .inputboxMessage .inputboxname5
+        {
+            display: block;
+           margin: 3% 0;
+           position: absolute;
+           z-index: 0;
+           top: -5px;
+           transition: all 0.5s;
+           font-size: 1rem;
+           
+        }
+        .Contact .CardContact .CardContactLeft form .inputboxMessage textarea
+        {
+           width: 80%;
+           height: 50px;
+           resize: none;
+           position: relative;
+           z-index: 0;
+           background-color: rgba(255, 255, 255, 0);
+           font-size: 1rem;
+           border: none;
+           outline: none;
+           border-bottom: 1px solid rgb(223, 222, 222);
+        }
+        .Contact .CardContact .CardContactLeft form button
+        {
+            position: absolute;
+            bottom: 10px;
+            right: 7%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            font-size: 1.5rem;
+            background-color: rgb(87, 144, 250);
+            color: white;
+        }    
+        .Contact .CardContact .CardContactLeft form button:hover
+        { 
+            background-color: rgb(123, 167, 250);
+        }        
+
+
+        .Contact .CardContact .CardContactRight
+        {
+            width: 100%;
+            height: auto;
+            color: white;
+        }
+        .Contact .CardContact .CardContactRight .infoname
+        {
+            font-size: 1.5rem;
+            width: 85%;
+            margin: 10% 7.5% 0 7.5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain{
+            display: block;
+            height: auto;
+            width: 85%;
+            margin: 10% 7.5%;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .box{
+            display: flex;
+            align-items: center;
+            margin-top: 5%;
+            width: 100%;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .box i{
+            padding: 10px 15px 10px 10px;
+            font-size: 1.1rem;
+            color: rgb(178, 178, 252);
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .box p{
+            font-size: 0.9rem;
+            line-height: 20px;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .box p a{
+            color: white;
+            text-decoration: none;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .boxlogo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+            margin: 15% 20%;
+        }
+        .Contact .CardContact .CardContactRight .CardContactRightmain .boxlogo i{
+            padding: 8px 13px;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(154, 154, 253);
+        }  
+        .Contact .CardContact .CardContactRight .CardContactRightmain .boxlogo i:hover{
+            background-color: rgb(115, 115, 252);
+        }   
+
+
 
 }
