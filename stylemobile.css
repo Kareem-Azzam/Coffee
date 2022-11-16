@@ -26,6 +26,7 @@
     --imagepro-color: antiquewhite;
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
     --backgroubcontact-color: #12066b;
+    --backgroubcontactform-color: rgb(243, 243, 243);
     --backgroubauboutus-color: #fa8416c4;
 }
 .dark-theme{
@@ -38,7 +39,8 @@
     --shadow-color: rgb(20, 18, 18);
     --imagepro-color: #192734;
     --backgroubdpro-color: #1212127c;
-    --backgroubcontact-color: #2c4763;
+    --backgroubcontact-color: #192734;
+    --backgroubcontactform-color: #15202B;
     --backgroubauboutus-color: #7c3c01;
 }
 
@@ -1647,7 +1649,7 @@
             width: 100%;
             height: auto;
             position: relative;
-             background-color: var(--primary-card-color);
+             background-color: var(--backgroubcontactform-color);
             margin: 0%;
         }
         .Contact .CardContact .CardContactLeft p
