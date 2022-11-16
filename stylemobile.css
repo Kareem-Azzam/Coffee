@@ -26,7 +26,7 @@
     --imagepro-color: antiquewhite;
     --backgroubdpro-color: rgba(240, 248, 255, 0.5);
     --backgroubcontact-color: #12066b;
-    --backgroubcontactform-color: rgb(226, 226, 226);
+    --backgroubcontactform-color: rgb(238, 238, 238);
     --backgroubauboutus-color: #fa8416c4;
 }
 .dark-theme{
@@ -1658,6 +1658,7 @@
             position: relative;
              background-color: var(--backgroubcontactform-color);
             margin: 0%;
+            box-shadow: var(--shadow-color);
         }
         .Contact .CardContact .CardContactLeft p
         {
