@@ -44,7 +44,7 @@ body{
 }
 
  /*Upload website*/
-	 .loader-wrapper {
+    .loader-wrapper {
       width: 100%;
       height: 100%;
       position: fixed;
@@ -1617,7 +1617,7 @@ body{
 /**************End Our Menu**************/
 
 
-.Contact
+	.Contact
         {
             width: 100%;
             height: 120vh;
@@ -1625,6 +1625,13 @@ body{
             margin-top: 5%;
             padding-top: 2.1%;
         }
+	.Contact h1
+	{
+	    width: 100%;
+	    font-size: 2.5rem;
+	    text-align: center;
+	    color: var(--primary-text-color);
+	}
         .Contact .Map
         {
             width: 100%;
