@@ -1741,22 +1741,21 @@
            border-bottom: 1px solid rgb(223, 222, 222);
            color: var(--primary-text-color);
         }
-        .Contact .CardContact .CardContactLeft form button i
+        .Contact .CardContact .CardContactLeft form button
         {
             position: absolute;
             bottom: 10px;
             right: 7%;
-            width: 0;
-            height: 0;
+            width: 60px;
+            height: 60px;
             padding:40px;
-            border-radius: 50%;
             border: none;
             font-size: 1.5rem;
             background-color: rgb(87, 144, 250);
             color: white;
             text-align: center;
         }    
-        .Contact .CardContact .CardContactLeft form button i:hover
+        .Contact .CardContact .CardContactLeft form button:hover
         { 
             background-color: rgb(123, 167, 250);
         }        
