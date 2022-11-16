@@ -371,6 +371,70 @@
         </div>
         </section>
 
+        <section class = "Contact">
+            <div class="Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.4086353149287!2d36.5706853167481!3d32.69478404851525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151bd5a07a4a5b1b%3A0x4ee56b8ff767605d!2z2K_ZiNin2LEg2KfZhNis2LHYqQ!5e0!3m2!1sar!2s!4v1668429875869!5m2!1sar!2s" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="CardContact">
+                <div class="CardContactLeft">
+                    <p>Send Your Message <i style = "color: rgb(123, 167, 250); font-size: 1.5rem;" class="fa fa-envelope-o"></i></p>
+                    <form action="#">
+                        <div class="formleft">
+                            <div class="inputbox">
+                                <label class = "inputboxname1" id = "inputboxname1">Your Name</label>
+                                <input type="text" name="UserName" id="UserName">
+                            </div>
+                            <div class="inputbox">
+                                <label class = "inputboxname2" id = "inputboxname2">Your Phone</label>
+                                <input type="text" name="UserPhone" id="UserPhone">
+                            </div>
+                        </div>
+                        <div class="formright">
+                            <div class="inputbox">
+                                <label class = "inputboxname3" id = "inputboxname3">Your Email</label>
+                                <input type="email" name="UserEmail" id="UserEmail">
+                            </div>
+                            <div class="inputbox">
+                                <label class = "inputboxname4" id = "inputboxname4">Your Favorite drink</label>
+                                <input type="text" name="UserDrink" id="UserDrink">
+                            </div>
+                        </div>
+                        <div class="inputboxMessage">
+                            <label class = "inputboxname5" id = "inputboxname5">Your Message</label>
+                            <textarea name="UserMessage" id="UserMessage" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit"><i class="fa fa-send-o"></i></button>
+                    </form>
+                </div>
+                <div class="CardContactRight">
+                    <p class = "infoname">Contact Information</p>
+    
+                    <div class="CardContactRightmain">
+                        <div class="box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Al-Swaida, Al_Jalaa quarter<br>
+                               Feastervillle Tregdhhdhd, PA 190251
+                            </p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-phone"></i>
+                            <p>(+963) 942-259-510</p>
+                        </div>
+                        <div class="box">
+                            <i class="far fa-envelope-open"></i>
+                            <p><a href="azzamkareem2@gmail.com">azzamkareem2@gmail.com</a></p>
+                        </div>
+                        <div class="boxlogo">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
       </main>
       
       <!--<div class="loader-wrapper" id = "loader-wrapper">
@@ -508,6 +572,78 @@
             }
         }
 
+
+
+        var UserName = document.getElementById("UserName");
+         UserName.onfocus = function(){
+            document.getElementById("inputboxname1").style.top = "-15px";
+            document.getElementById("inputboxname1").style.fontSize = "0.8rem";
+            document.getElementById("inputboxname1").style.color = "#777"
+        }
+        UserName.onblur = function(){
+            if(UserName.value == ""){
+                document.getElementById("inputboxname1").style.top = "7px";
+                document.getElementById("inputboxname1").style.fontSize = "1rem";
+                document.getElementById("inputboxname1").style.color = "var(--primary-text-color)"
+            }
+        }
+       
+        
+        var UserPhone = document.getElementById("UserPhone");
+         UserPhone.onfocus = function(){
+            document.getElementById("inputboxname2").style.top = "-15px";
+            document.getElementById("inputboxname2").style.fontSize = "0.8rem";
+            document.getElementById("inputboxname2").style.color = "#777"
+        }
+        UserPhone.onblur = function(){
+            if(UserPhone.value == ""){
+                document.getElementById("inputboxname2").style.top = "7px";
+                document.getElementById("inputboxname2").style.fontSize = "1rem";
+                document.getElementById("inputboxname2").style.color = "var(--primary-text-color)"
+            }
+        }
+       
+        var UserEmail = document.getElementById("UserEmail");
+         UserEmail.onfocus = function(){
+            document.getElementById("inputboxname3").style.top = "-15px";
+            document.getElementById("inputboxname3").style.fontSize = "0.8rem";
+            document.getElementById("inputboxname3").style.color = "#777"
+        }
+        UserEmail.onblur = function(){
+            if(UserEmail.value == ""){
+                document.getElementById("inputboxname3").style.top = "7px";
+                document.getElementById("inputboxname3").style.fontSize = "1rem";
+                document.getElementById("inputboxname3").style.color = "var(--primary-text-color)"
+            }
+        }
+
+        var UserDrink = document.getElementById("UserDrink");
+         UserDrink.onfocus = function(){
+            document.getElementById("inputboxname4").style.top = "-15px";
+            document.getElementById("inputboxname4").style.fontSize = "0.8rem";
+            document.getElementById("inputboxname4").style.color = "#777"
+        }
+        UserDrink.onblur = function(){
+            if(UserDrink.value == ""){
+                document.getElementById("inputboxname4").style.top = "7px";
+                document.getElementById("inputboxname4").style.fontSize = "1rem";
+                document.getElementById("inputboxname4").style.color = "var(--primary-text-color)"
+            }
+        }
+
+        var UserMessage = document.getElementById("UserMessage");
+         UserMessage.onfocus = function(){
+            document.getElementById("inputboxname5").style.top = "-18px";
+            document.getElementById("inputboxname5").style.fontSize = "0.8rem";
+            document.getElementById("inputboxname5").style.color = "#777"
+        }
+        UserMessage.onblur = function(){
+            if(UserMessage.value == ""){
+                document.getElementById("inputboxname5").style.top = "0";
+                document.getElementById("inputboxname5").style.fontSize = "1rem";
+                document.getElementById("inputboxname5").style.color = "var(--primary-text-color)"
+            }
+        }
 
     </script>
       <script src="https://kit.fontawesome.com/5d2ad38953.js" crossorigin="anonymous"></script>
