@@ -1739,14 +1739,14 @@
            border-bottom: 1px solid rgb(223, 222, 222);
            color: var(--primary-text-color);
         }
-        .Contact .CardContact .CardContactLeft form button
+        .Contact .CardContact .CardContactLeft form button i
         {
             position: absolute;
             bottom: 10px;
             right: 7%;
             width: 0;
             height: 0;
-            padding:20px;
+            padding:40px;
             border-radius: 50%;
             border: none;
             font-size: 1.5rem;
@@ -1754,7 +1754,7 @@
             color: white;
             text-align: center;
         }    
-        .Contact .CardContact .CardContactLeft form button:hover
+        .Contact .CardContact .CardContactLeft form button i:hover
         { 
             background-color: rgb(123, 167, 250);
         }        
