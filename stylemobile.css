@@ -1633,7 +1633,7 @@
             width: 95%;
             height: auto;
             margin: 0 2.5%;
-            background-color: var(--backgroubcontact-color);
+            background-color: var(--primary-card-color);
             position: absolute;
             top: 270px;
             display: block;
@@ -1647,7 +1647,7 @@
             width: 100%;
             height: auto;
             position: relative;
-            background-color: var(--primary-card-color);
+            background-color: var(--backgroubcontact-color);
             margin: 0%;
         }
         .Contact .CardContact .CardContactLeft p
@@ -1737,6 +1737,7 @@
            border: none;
            outline: none;
            border-bottom: 1px solid rgb(223, 222, 222);
+           color: var(--primary-text-color);
         }
         .Contact .CardContact .CardContactLeft form button
         {
