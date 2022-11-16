@@ -1644,7 +1644,7 @@ body{
             margin: 0 10%;
             background-color: var(--backgroubcontact-color);
             position: absolute;
-            top: 300px;
+            top: 400px;
             display: flex;
             justify-content: space-between;
             align-items: center;
