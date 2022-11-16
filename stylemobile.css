@@ -38,7 +38,7 @@
     --shadow-color: rgb(20, 18, 18);
     --imagepro-color: #192734;
     --backgroubdpro-color: #1212127c;
-    --backgroubcontact-color: #15202B;
+    --backgroubcontact-color: #2c4763;
     --backgroubauboutus-color: #7c3c01;
 }
 
@@ -1750,6 +1750,7 @@
             font-size: 1.5rem;
             background-color: rgb(87, 144, 250);
             color: white;
+            text-align: center;
         }    
         .Contact .CardContact .CardContactLeft form button:hover
         { 
