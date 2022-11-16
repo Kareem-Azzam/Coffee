@@ -1735,6 +1735,7 @@ body{
            border: none;
            outline: none;
            border-bottom: 1px solid rgb(223, 222, 222);
+	   color: var(--primary-text-color);
         }
         .Contact .CardContact .CardContactLeft form button
         {
